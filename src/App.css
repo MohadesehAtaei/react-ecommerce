@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header , footer{
+    /* background-color: #437464; */
+    background-color: #0e1d3c;
+    color: #fff;
+}
+
+header .logo img {
+    height: 45px;
+    border-radius: 1rem;
+    margin: 3px;
+}
+
+header .nav-item {
+    background-color: #3b4b6b;
+    border-radius: 1rem;
+    margin: 2px 5px;
+    width: 120px;
+    height: 37px;
+}
+
+header .nav-item:hover, .active {
+    background-color: #ef949a;
+}
+
+header .nav-item a {
+    border-radius: 1rem;
+    padding: 4px 7px;
+    /* margin: 2px 0px; */
+    width: 120px;
+    height: 37px;
+}
+
+header .menu .btn {
+    width: 120px;
+    margin: 2px 15px;
+}
+
+.cart-counter {
+    
+}
+
+/* Main Content */
+main .card-img-top {
+    width: 250px;
+    height: 300px;
+}
+
+.products .card .card-img-top {
+    height: 250px;
+    padding: 10px;
+}
+
+.products .card .card-body .height {
+    height: 150px;
+}
+
+/* Footer */
+.footer-section ul li{
+    list-style: none;
+}
+/* Login */
+.shapes {
+    /* background-color: #3b4b6b; */
+    position: relative;
+    overflow: hidden;
+}
+.shape-1 {
+    position: absolute;
+    left: -150px;
+    top: -80px;
+    background: linear-gradient( 20deg , #ef949a, #562f32);
+    height: 500px;
+    width: 500px;
+    border-radius: 2rem;
+    transform: rotate(40deg);
+}
+.shape-2 {
+    position: absolute;
+    left: -120px;
+    background: linear-gradient( 20deg , #ef949a, #562f32);
+    height: 300px;
+    width: 300px;
+    border-radius: 2rem;
+    transform: rotate(40deg);
+}
+
+
+
+
+.pointer {
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+}
+
+/* Project Responsive */
+
+@media only screen and (max-width: 1200px) {
+    .shape-1 {
+        left: -170px;
+        top: -50px;
+        height: 400px;
+        width: 400px;
+    }
+    .shape-2 {
+        left: -100px;
+        top: 20px;
+        height: 250px;
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header .menu {
+        background-color: #f0abb0;
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        padding: 4rem 1rem;
+        transition: 300ms all;
+        z-index: 2;
+    }
+    header .menu .nav {
+        flex-direction: column;
+        padding-top: 50px;
+    }
+    header .menu .nav .close-sidebar {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+    header .nav-item {
+        background-color: #ef949a;
+        border-radius: 1rem;
+        margin: 2px;
+        width: 220px;
+    }
+    header .nav-item a {
+        width: 220px;
+    }
+    header .nav-item:hover , .active {
+        background-color: #0e1d3c;
+        width: 220px;
+    }
+    header .menu .btn {
+        width: 220px;
+    }
+}
